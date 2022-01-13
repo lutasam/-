@@ -1,2 +1,3 @@
-# 编译原理作业
-for循环 输出中间代码
+# compile homework
+implement the 'FOR''s generation of quad
+not very perfect
