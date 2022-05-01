@@ -1,0 +1,11 @@
+int main()
+{
+    int a = 5;
+    int b = a + 7;
+    float c = 5.34;
+    int temp = a;
+    a = b;
+    b = temp;
+    printf("%f", c);
+    return 0;
+}

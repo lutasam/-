@@ -1,0 +1,23 @@
+                文法              分析串            分析字符             	剩余串
+            S->str=B                                       a                   =a*(b+1)/2+#
+            S->str=B                   a                   =                   a*(b+1)/2+#
+              B->CBp                  a=                   a                   *(b+1)/2+#
+              C->DCp                  a=                   a                   *(b+1)/2+#
+      D->str|num|(B)                  a=                   a                   *(b+1)/2+#
+     Cp->*DCp|/DCp|e                 a=a                   *                   (b+1)/2+#
+      D->str|num|(B)                a=a*                   (                   b+1)/2+#
+              B->CBp               a=a*(                   b                   +1)/2+#
+              C->DCp               a=a*(                   b                   +1)/2+#
+      D->str|num|(B)               a=a*(                   b                   +1)/2+#
+     Bp->+CBp|-CBp|e              a=a*(b                   +                   1)/2+#
+              C->DCp             a=a*(b+                   1                   )/2+#
+      D->str|num|(B)             a=a*(b+                   1                   )/2+#
+      D->str|num|(B)            a=a*(b+1                   )                   /2+#
+     Cp->*DCp|/DCp|e           a=a*(b+1)                   /                   2+#
+      D->str|num|(B)          a=a*(b+1)/                   2                   +#
+     Bp->+CBp|-CBp|e         a=a*(b+1)/2                   +                   #
+              C->DCp        a=a*(b+1)/2+                   #
+            不通过！
+     )#
+      D->str|num|(B)        i=3*4+t/(1+2                   )                   #
+              通过！

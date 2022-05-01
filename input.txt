@@ -1,0 +1,12 @@
+int main()
+{
+    int a = 0, b = 4;
+    float b = 3.2;
+    double c = a + b;
+    if (a == b && a == c){
+        c = a;
+    } else {
+        c = b;
+    }
+    return 0;
+}

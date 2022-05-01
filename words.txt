@@ -1,0 +1,7 @@
+for ( i = temp + 3 ; i > 5 - b ; i = i + 1 ) {
+for ( i = temp + 3 ; i > 5 - b ; i = i + 1 ) {
+temp = a ;
+temp = i + a - 5 ;
+ans = ans + temp ;
+}
+}
