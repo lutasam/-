@@ -1,3 +1,3 @@
-# homework compiler for C's FOR
+# compiler for C's FOR
 implement the 'FOR''s generation by LR(1)<br>
 not very perfect
